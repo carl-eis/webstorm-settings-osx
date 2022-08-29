@@ -77,4 +77,12 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="fetch" value="import getAxios from 'helpers/axios'&#10;&#10;const axios = getAxios()&#10;&#10;const prepareData = (data) =&gt; {&#10;  return data&#10;}&#10;&#10;interface IItemPayload {&#10;  [x: string]: any&#10;}&#10;&#10;export const fetchItem = async (): Promise&lt;IItemPayload&gt; =&gt; {&#10;  const response = await axios.get('/route')&#10;  return prepareData(response?.data)&#10;}&#10;" description="VALR Api boilerplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_CLASS" value="false" />
+      <option name="TS_EXPRESSION" value="false" />
+      <option name="TS_STATEMENT" value="false" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
